@@ -146,7 +146,8 @@ a:hover { color: #f0d7cc; }
   box-shadow: 0 40px 120px rgba(0,0,0,0.6);
 }
 .video-frame--hero {
-  margin-top: 40px;
+  max-width: 78%;
+  margin: 40px auto 0;
   background: radial-gradient(120% 120% at 50% 0%, #16121a 0%, #0c0b10 60%, #08080a 100%);
 }
 .video-frame--hero.has-video {
@@ -976,6 +977,7 @@ a:hover { color: #f0d7cc; }
   .problem-grid { grid-template-columns: 1fr; }
   .problem-grid-connector { display: none; }
   .result-grid { grid-template-columns: 1fr; }
+  .video-frame--hero { max-width: 100%; }
   .quote-section { padding-top: 72px; }
   .motion-meta { grid-template-columns: 1fr; gap: 28px; }
   .hero-ctas { flex-wrap: wrap; }
