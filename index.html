@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helium × Noise Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@50..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="brand-lockup">
+      <img src="assets/helium-logo.png" alt="Helium" class="brand-logo brand-logo--helium">
+      <span class="brand-x">×</span>
+      <img src="assets/noise-logo.png" alt="Noise" class="brand-logo brand-logo--noise">
+    </div>
+    <div class="header-right">
+      <a href="#" class="btn btn--solid" data-book>Start a Project</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1 class="hero-title">We built Noise an Apple-like product showcase. On Shopify.</h1>
+    <p class="hero-subtitle">A motion-first _REP launch with scroll-driven storytelling, real-time 3D product views, and data that animates as you go. Everything below is live, at 60fps. And yes, every pixel of it runs on Shopify.</p>
+    <div class="hero-ctas">
+      <a href="#work" class="btn btn--solid">See What We Did</a>
+      <a href="https://www.gonoise.com/a/h/noise-rep-fitness-tracker" target="_blank" rel="noopener" class="btn btn--outline">View Live Site ↗</a>
+    </div>
+
+    <!-- HERO VIDEO: full walkthrough of the site we built -->
+    <div class="video-frame video-frame--hero has-video">
+      <video autoplay muted loop playsinline class="video-el" data-loop-video src="assets/videos/hero-demo.mp4"></video>
+      <div class="video-shimmer"></div>
+      <div class="video-badge-center">
+        <div class="video-play-ring">
+          <div class="video-spinner"></div>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="#f5f5f7"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div>
+          <div class="video-label">Full site walkthrough</div>
+          <div class="video-sublabel">Looping capture · gonoise.com</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE DID ===== -->
+  <section id="work" class="problem-section">
+    <h2 class="section-title">The brief: don't just show the product. Perform it.</h2>
+    <p class="section-subtitle">Noise wanted the _REP page to convince in the first scroll. We treated motion as the message: every section is choreographed to reveal a feature exactly when the story calls for it. Here's what we shipped.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-card-glow"></div>
+        <div class="problem-card-head">
+          <span class="problem-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M4 20h16"/><path d="M8 16v4"/><path d="M16 16v4"/></svg>
+          </span>
+          <h3 class="problem-title">Scroll-Driven Narrative</h3>
+        </div>
+        <p class="problem-body">One continuous scroll carries the whole story, with no page loads and no jump cuts. Scenes are pinned and timed to scroll position so the page reads like a film, not a brochure.</p>
+        <div class="problem-stat-wrap">
+          <div class="problem-stat">1 scroll</div>
+          <div class="problem-stat-label">the entire product story, uninterrupted</div>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-card-glow"></div>
+        <div class="problem-card-head">
+          <span class="problem-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12"/><path d="M21 7l-9 5-9-5"/></svg>
+          </span>
+          <h3 class="problem-title">Real-Time 3D Product</h3>
+        </div>
+        <p class="problem-body">The band renders live in the browser, with no pre-baked frames. Visitors can read the weave, the clasp and every colourway from any angle as it rotates into view.</p>
+        <div class="problem-stat-wrap">
+          <div class="problem-stat">360°</div>
+          <div class="problem-stat-label">in-browser, no video fallback</div>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-card-glow"></div>
+        <div class="problem-card-head">
+          <span class="problem-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+          </span>
+          <h3 class="problem-title">Living Data Visualisation</h3>
+        </div>
+        <p class="problem-body">Recovery, sleep and energy scores count up and their rings sweep to fill the instant they enter the viewport. It's the same data language as the companion app, on the web.</p>
+        <div class="problem-stat-wrap">
+          <div class="problem-stat">3 scores</div>
+          <div class="problem-stat-label">animated on scroll, in sync with the app</div>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-card-glow"></div>
+        <div class="problem-card-head">
+          <span class="problem-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg>
+          </span>
+          <h3 class="problem-title">60 FPS, Everywhere</h3>
+        </div>
+        <p class="problem-body">Heavy motion, light footprint. GPU-friendly transforms, lazy-loaded scenes and a tuned asset pipeline keep it buttery from flagship desktops down to mid-range phones.</p>
+        <div class="problem-stat-wrap">
+          <div class="problem-stat">60fps</div>
+          <div class="problem-stat-label">held across devices, not just demos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOTION HIGHLIGHTS ===== -->
+  <section id="motion" class="usecases-section">
+    <h2 class="section-title">Motion, moment by moment.</h2>
+    <p class="section-subtitle">Five of the moves we're proudest of from the _REP build. Pick one to see the capture and how it was made.</p>
+
+    <!-- Motion tabs -->
+    <div class="industry-tabs" role="tablist">
+      <button class="industry-tab is-active" data-panel="opening" role="tab" aria-selected="true">
+        <span class="tab-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 11-12.8 0"/></svg></span>
+        Opening Reveal
+      </button>
+      <button class="industry-tab" data-panel="scroll" role="tab" aria-selected="false">
+        <span class="tab-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h10"/><path d="M4 17h13"/><path d="M18 14v6"/><path d="M15 17l3 3 3-3"/></svg></span>
+        Kinetic Scroll Story
+      </button>
+      <button class="industry-tab" data-panel="rotate" role="tab" aria-selected="false">
+        <span class="tab-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v5h-5"/></svg></span>
+        3D Product Rotation
+      </button>
+      <button class="industry-tab" data-panel="rings" role="tab" aria-selected="false">
+        <span class="tab-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/></svg></span>
+        Live Score Rings
+      </button>
+      <button class="industry-tab" data-panel="compare" role="tab" aria-selected="false">
+        <span class="tab-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9"/><path d="M10 20V4"/><path d="M16 20v-6"/><path d="M22 20V8"/></svg></span>
+        Head-to-Head
+      </button>
+    </div>
+
+    <!-- Panels -->
+    <div class="motion-panels">
+
+      <!-- 01 -->
+      <div class="motion-panel is-active" data-panel="opening">
+        <div class="noise-scene noise-scene--fold" data-reveal-scene>
+          <button class="demo-replay" type="button" data-demo-replay>↻ Replay</button>
+          <div class="ff-stage">
+            <div class="ff-row">
+              <div class="ff-rep" data-reveal style="--d:.1s" data-lottie="assets/noise/rep-logo.json"></div>
+              <span class="ff-side" data-reveal style="--d:.28s">24X7 Fitness Tracker</span>
+            </div>
+            <img class="ff-bg" src="assets/noise/first-fold-bg.png" alt="Noise REP, 24x7 screenless fitness tracker" data-reveal style="--d:0s">
+          </div>
+        </div>
+        <div class="motion-meta">
+          <div class="motion-copy">
+            <span class="motion-index">01</span>
+            <h3 class="motion-title">Opening Reveal</h3>
+            <p class="motion-desc">The site boots like the product powers on: a full-bleed _REP hero with the tracker's status light glowing. The wordmark above is the <strong>real Lottie animation</strong> from the site, looping live. Hit Replay to watch it assemble.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="motion-panel" data-panel="scroll">
+        <div class="noise-scene noise-scene--kss">
+          <button class="demo-replay" type="button" data-demo-replay>↻ Replay</button>
+          <div class="kss-heading">Better Performance<br>starts now</div>
+          <div class="kss-stage" data-kss>
+            <div class="kss-cards">
+              <div class="kss-card" data-i="0">
+                <img class="kss-card-img" src="assets/noise/kss-recover.png" alt="Recover">
+                <img class="kss-ov" src="assets/noise/ov-temp.png" alt="Temperature variance" style="top:16%;left:33%;width:15%">
+                <img class="kss-ov" src="assets/noise/ov-resp.png" alt="Respiratory rate" style="top:36%;left:57%;width:22%">
+                <img class="kss-ov" src="assets/noise/ov-sleep.png" alt="Sleep score" style="top:53%;left:56%;width:10%">
+              </div>
+              <div class="kss-card" data-i="1">
+                <img class="kss-card-img" src="assets/noise/kss-elevate.png" alt="Elevate">
+                <img class="kss-ov" src="assets/noise/ov-zone.png" alt="Zone trends" style="top:29%;left:55%;width:18%">
+                <img class="kss-ov" src="assets/noise/ov-load.png" alt="Training load" style="top:32%;left:26%;width:19%">
+                <img class="kss-ov" src="assets/noise/ov-steps.png" alt="Steps" style="top:62%;left:60%;width:10%">
+              </div>
+              <div class="kss-card" data-i="2">
+                <img class="kss-card-img" src="assets/noise/kss-perform.png" alt="Perform">
+                <img class="kss-ov" src="assets/noise/ov-perform.png" alt="Strength training" style="top:42%;left:62%;width:25%">
+                <img class="kss-ov" src="assets/noise/ov-spike.png" alt="Spike detect" style="top:29%;left:19%;width:25%">
+              </div>
+            </div>
+            <div class="kss-dots">
+              <span class="kss-dot"></span><span class="kss-dot"></span><span class="kss-dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="motion-meta">
+          <div class="motion-copy">
+            <span class="motion-index">02</span>
+            <h3 class="motion-title">Kinetic Scroll Story</h3>
+            <p class="motion-desc">Three scenes (RECOVER, ELEVATE, PERFORM) stack and cross-dissolve, each with its stats popping in on a stagger. On the live site it's pinned and driven by scroll position; here it <strong>auto-advances on a loop</strong> (or step it with Replay).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="motion-panel" data-panel="rotate">
+        <div class="noise-scene noise-scene--ao">
+          <div class="ao-stage" data-ao>
+            <video class="ao-video is-active" data-i="0" src="assets/noise/rot-lightweight.mp4" muted loop playsinline preload="auto"></video>
+            <video class="ao-video" data-i="1" src="assets/noise/rot-twill.mp4" muted loop playsinline preload="metadata"></video>
+            <video class="ao-video" data-i="2" src="assets/noise/rot-steel.mp4" muted loop playsinline preload="metadata"></video>
+            <video class="ao-video" data-i="3" src="assets/noise/rot-sensor.mp4" muted loop playsinline preload="metadata"></video>
+            <div class="ao-pills">
+              <button class="ao-pill is-active" data-i="0"><span class="ao-plus">+</span><span class="ao-pill-label">27g Lightweight</span><span class="ao-pill-desc">Sensors, processor, battery, all in one module. The lightest in its class.</span></button>
+              <button class="ao-pill" data-i="1"><span class="ao-plus">+</span><span class="ao-pill-label">Dual Tone Twill</span><span class="ao-pill-desc">Engineered to move with you. Dries fast, breathes easy, gentle on skin.</span></button>
+              <button class="ao-pill" data-i="2"><span class="ao-plus">+</span><span class="ao-pill-label">Dual-finish Stainless Steel</span><span class="ao-pill-desc">A precision-finished stainless steel frame that's built to last.</span></button>
+              <button class="ao-pill" data-i="3"><span class="ao-plus">+</span><span class="ao-pill-label">Smarter Sensor Stack</span><span class="ao-pill-desc">Five LEDs, four photodiodes, multiple wavelengths make a powerful sensor stack.</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="motion-meta">
+          <div class="motion-copy">
+            <span class="motion-index">03</span>
+            <h3 class="motion-title">3D Product Rotation</h3>
+            <p class="motion-desc">The band turns through full 3D so you can read the weave, the steel and the sensor array from any angle. These are the <strong>real product videos</strong> from the site. Click a feature to switch the view.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="motion-panel" data-panel="rings">
+        <div class="noise-scene">
+          <button class="demo-replay" type="button" data-demo-replay>↻ Replay</button>
+          <div class="score-demo" data-demo="rings">
+            <div class="ni-card">
+              <h3 class="ni-heading">Your body, in three scores.</h3>
+              <div class="ni-grid">
+                <figure class="ni-item">
+                  <div class="ni-photo">
+                    <img src="assets/noise/sleep.png" alt="Sleep tracking" loading="lazy">
+                    <div class="ni-ring"><div class="score-ring" data-value="76" data-max="100" data-suffix="" data-color="#9b6cff" data-label="Sleep"></div></div>
+                  </div>
+                  <figcaption class="ni-caption">Sleep quality, measured beyond the hours</figcaption>
+                </figure>
+                <figure class="ni-item">
+                  <div class="ni-photo">
+                    <img src="assets/noise/recovery.png" alt="Recovery score" loading="lazy">
+                    <div class="ni-ring"><div class="score-ring" data-value="80" data-max="100" data-suffix="%" data-color="#34c759" data-label="Recovery"></div></div>
+                  </div>
+                  <figcaption class="ni-caption">Your body's readiness to perform</figcaption>
+                </figure>
+                <figure class="ni-item">
+                  <div class="ni-photo">
+                    <img src="assets/noise/effort.png" alt="Effort score" loading="lazy">
+                    <div class="ni-ring"><div class="score-ring" data-value="54" data-max="100" data-suffix="" data-color="#ff7a1a" data-label="Effort"></div></div>
+                  </div>
+                  <figcaption class="ni-caption">Energy expenditure, in real time</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="motion-meta">
+          <div class="motion-copy">
+            <span class="motion-index">04</span>
+            <h3 class="motion-title">Live Score Rings</h3>
+            <p class="motion-desc">Sleep, recovery and effort scores count up while their rings sweep to fill the moment they scroll into view. The demo above is the <strong>real animation, rebuilt in the browser</strong>, with the same easing and maths as production. Scroll it into view or hit Replay.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="motion-panel" data-panel="compare">
+        <div class="noise-scene noise-scene--compare" data-reveal-scene>
+          <button class="demo-replay" type="button" data-demo-replay>↻ Replay</button>
+          <div class="be-bg" style="background-image:url('assets/noise/grid-bg.png')"></div>
+          <div class="be-overlay"></div>
+          <div class="be-inner">
+            <h3 class="be-heading" data-reveal style="--d:0s">Better everywhere</h3>
+
+            <div class="be-bands">
+              <div></div>
+              <div class="be-band" data-reveal style="--d:.05s"><img src="assets/noise/rep-band.png" alt="Noise REP band" loading="lazy"></div>
+              <div class="be-band be-band--other" data-reveal style="--d:.12s"><img src="assets/noise/other-band.png" alt="Other fitness band" loading="lazy"></div>
+            </div>
+
+            <div class="be-table">
+              <div class="be-row be-row--head" data-reveal style="--d:0s">
+                <span class="be-h">Features</span>
+                <span class="be-h be-h--c">_REP</span>
+                <span class="be-h be-h--c">Other bands</span>
+              </div>
+
+              <div class="be-row be-row--body" data-reveal style="--d:.04s">
+                <span class="be-feature">Price</span>
+                <span class="be-cell"><span class="be-cell-text">₹9,999</span></span>
+                <span class="be-cell"><span class="be-cell-text">₹28,999</span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.08s">
+                <span class="be-feature">No Subscription</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-cell-text">₹25,000 Annually</span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.12s">
+                <span class="be-feature">HRV</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.16s">
+                <span class="be-feature">Recovery Score</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.20s">
+                <span class="be-feature">Effort</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.24s">
+                <span class="be-feature">4 Stage Sleep Tracking</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.28s">
+                <span class="be-feature">Skin Temperature Variance</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.32s">
+                <span class="be-feature">Stamina Index</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-cross"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#3a3a3a" stroke-width="2.4" stroke-linecap="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.36s">
+                <span class="be-feature">Training Effort/Load</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-cross"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#3a3a3a" stroke-width="2.4" stroke-linecap="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.40s">
+                <span class="be-feature">VO2 Max</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+              <div class="be-row be-row--body" data-reveal style="--d:.44s">
+                <span class="be-feature">AI Insights</span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+                <span class="be-cell"><span class="be-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#0a0a0a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="motion-meta">
+          <div class="motion-copy">
+            <span class="motion-index">05</span>
+            <h3 class="motion-title">Head-to-Head</h3>
+            <p class="motion-desc">A spec-by-spec comparison against rival trackers. Each row does a <strong>blur-scale reveal in sequence</strong> as it scrolls in, turning the "why _REP" argument into choreography, not a static table. This is the real section, rebuilt in the browser. Scroll it in or hit Replay.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CLOSING CTA ===== -->
+  <section id="contact" class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title">Want a site that moves like this?</h2>
+      <p class="cta-sub">We design and build motion-first product experiences end to end: strategy, design, and the code that ships. The _REP page is one of them. Yours is next.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn--solid" data-book>Start a Project</a>
+        <a href="https://www.gonoise.com/a/h/noise-rep-fitness-tracker" target="_blank" rel="noopener" class="btn btn--outline">View Live Site ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <svg width="24" height="24" viewBox="0 0 30 30" fill="none"><rect x="2" y="2" width="8" height="8" rx="2" fill="rgba(245,245,247,0.55)"/><rect x="11" y="11" width="8" height="8" rx="2" fill="rgba(245,245,247,0.55)"/><rect x="20" y="2" width="8" height="8" rx="2" fill="rgba(245,245,247,0.55)"/><rect x="2" y="20" width="8" height="8" rx="2" fill="rgba(245,245,247,0.55)"/><rect x="20" y="20" width="8" height="8" rx="2" fill="rgba(245,245,247,0.55)"/></svg>
+      <span>Helium × Noise _REP Case Study</span>
+    </div>
+    <div class="footer-copy">© 2026 Helium. Built for Noise.</div>
+  </footer>
+
+<script src="assets/vendor/lottie.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
