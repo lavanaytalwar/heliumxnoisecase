@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@50..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,6 +29,7 @@
   <section class="hero">
     <h1 class="hero-title">We built Noise an Apple-like product showcase. On Shopify.</h1>
     <p class="hero-subtitle">A motion-first _REP launch with scroll-driven storytelling, real-time 3D product views, and data that animates as you go. Everything below is live, at 60fps. And yes, every pixel of it runs on Shopify.</p>
+    <p class="hero-stat-line"><!-- TODO: replace with real client data --> Live since Feb 2026 <span class="hero-stat-dot">·</span> <span class="hero-stat-hl">+18% conversion rate</span> <span class="hero-stat-dot">·</span> <span class="hero-stat-hl">1.2s average load time</span></p>
     <div class="hero-ctas">
       <a href="#work" class="btn btn--solid">See What We Did</a>
       <a href="https://www.gonoise.com/a/h/noise-rep-fitness-tracker" target="_blank" rel="noopener" class="btn btn--outline">View Live Site ↗</a>
@@ -55,7 +57,35 @@
     <h2 class="section-title">The brief: don't just show the product. Perform it.</h2>
     <p class="section-subtitle">Noise wanted the _REP page to convince in the first scroll. We treated motion as the message: every section is choreographed to reveal a feature exactly when the story calls for it. Here's what we shipped.</p>
 
+    <!-- ===== THE RESULT ===== -->
+    <h3 class="result-heading">The result</h3>
+    <div class="result-grid">
+      <!-- TODO: replace with real client data -->
+      <div class="result-card">
+        <div class="result-stat">+18%</div>
+        <div class="result-stat-label">conversion rate</div>
+      </div>
+      <!-- TODO: replace with real client data -->
+      <div class="result-card">
+        <div class="result-stat">1.2 sec</div>
+        <div class="result-stat-label">average load time</div>
+      </div>
+      <!-- TODO: replace with real client data -->
+      <div class="result-card">
+        <div class="result-stat">74%</div>
+        <div class="result-stat-label">scroll completion rate</div>
+      </div>
+    </div>
+
     <div class="problem-grid">
+      <div class="problem-grid-connector" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20"/><path d="M2 12h20"/>
+          <path d="M12 2l-3 3M12 2l3 3"/><path d="M12 22l-3-3M12 22l3-3"/>
+          <path d="M2 12l3-3M2 12l3 3"/><path d="M22 12l-3-3M22 12l-3 3"/>
+        </svg>
+      </div>
+
       <div class="problem-card">
         <div class="problem-card-glow"></div>
         <div class="problem-card-head">
@@ -64,11 +94,7 @@
           </span>
           <h3 class="problem-title">Scroll-Driven Narrative</h3>
         </div>
-        <p class="problem-body">One continuous scroll carries the whole story, with no page loads and no jump cuts. Scenes are pinned and timed to scroll position so the page reads like a film, not a brochure.</p>
-        <div class="problem-stat-wrap">
-          <div class="problem-stat">1 scroll</div>
-          <div class="problem-stat-label">the entire product story, uninterrupted</div>
-        </div>
+        <p class="problem-body">One continuous scroll carries the whole story — no page loads, no jump cuts.</p>
       </div>
 
       <div class="problem-card">
@@ -79,11 +105,7 @@
           </span>
           <h3 class="problem-title">Real-Time 3D Product</h3>
         </div>
-        <p class="problem-body">The band renders live in the browser, with no pre-baked frames. Visitors can read the weave, the clasp and every colourway from any angle as it rotates into view.</p>
-        <div class="problem-stat-wrap">
-          <div class="problem-stat">360°</div>
-          <div class="problem-stat-label">in-browser, no video fallback</div>
-        </div>
+        <p class="problem-body">Renders live in-browser — every angle, every colourway, no video fallback.</p>
       </div>
 
       <div class="problem-card">
@@ -94,11 +116,7 @@
           </span>
           <h3 class="problem-title">Living Data Visualisation</h3>
         </div>
-        <p class="problem-body">Recovery, sleep and energy scores count up and their rings sweep to fill the instant they enter the viewport. It's the same data language as the companion app, on the web.</p>
-        <div class="problem-stat-wrap">
-          <div class="problem-stat">3 scores</div>
-          <div class="problem-stat-label">animated on scroll, in sync with the app</div>
-        </div>
+        <p class="problem-body">Scores count up and rings sweep to fill the instant they enter view.</p>
       </div>
 
       <div class="problem-card">
@@ -109,11 +127,7 @@
           </span>
           <h3 class="problem-title">60 FPS, Everywhere</h3>
         </div>
-        <p class="problem-body">Heavy motion, light footprint. GPU-friendly transforms, lazy-loaded scenes and a tuned asset pipeline keep it buttery from flagship desktops down to mid-range phones.</p>
-        <div class="problem-stat-wrap">
-          <div class="problem-stat">60fps</div>
-          <div class="problem-stat-label">held across devices, not just demos</div>
-        </div>
+        <p class="problem-body">GPU-friendly and lazy-loaded — buttery smooth from desktops to mid-range phones.</p>
       </div>
     </div>
   </section>
@@ -367,6 +381,13 @@
       </div>
 
     </div>
+  </section>
+
+  <!-- ===== CLIENT QUOTE ===== -->
+  <section class="quote-section">
+    <!-- TODO: replace with real client data -->
+    <blockquote class="quote-text">"This became our best-performing product page since launch."</blockquote>
+    <p class="quote-attribution">— Noise team</p>
   </section>
 
   <!-- ===== CLOSING CTA ===== -->

@@ -123,6 +123,17 @@ a:hover { color: #f0d7cc; }
   gap: 16px;
   margin-top: 28px;
 }
+.hero-stat-line {
+  margin: 22px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(245,245,247,0.85);
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.hero-stat-dot { color: rgba(245,245,247,0.3); font-weight: 400; }
+.hero-stat-hl { color: #f0d7cc; }
 
 /* ===== VIDEO PLACEHOLDER ===== */
 .video-frame {
@@ -253,14 +264,32 @@ a:hover { color: #f0d7cc; }
   line-height: 1.05;
 }
 .problem-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin-top: 72px;
 }
+.problem-grid-connector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c0c0e;
+  border: 1px solid rgba(255,255,255,0.14);
+  color: rgba(245,245,247,0.65);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+  z-index: 2;
+}
 .problem-card {
   position: relative;
-  padding: 40px;
+  padding: 30px 34px;
   border-radius: 20px;
   background: linear-gradient(160deg, rgba(216,124,101,0.06), rgba(255,255,255,0.02));
   border: 1px solid rgba(255,255,255,0.08);
@@ -285,14 +314,14 @@ a:hover { color: #f0d7cc; }
 .problem-icon { color: #f5f5f7; display: flex; }
 .problem-title {
   margin: 0;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
 .problem-body {
-  margin: 20px 0 0;
-  font-size: 16px;
-  line-height: 1.6;
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
   color: rgba(245,245,247,0.6);
   position: relative;
 }
@@ -310,6 +339,43 @@ a:hover { color: #f0d7cc; }
 .problem-stat-label {
   margin-top: 4px;
   font-size: 14px;
+  color: rgba(245,245,247,0.5);
+}
+
+/* ===== THE RESULT ===== */
+.result-heading {
+  margin: 72px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245,245,247,0.4);
+}
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+.result-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: radial-gradient(120% 140% at 50% 0%, #1c1c20 0%, #0a0a0c 70%);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+.result-stat {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+.result-stat-label {
+  margin-top: 8px;
+  font-size: 13px;
   color: rgba(245,245,247,0.5);
 }
 
@@ -814,6 +880,29 @@ a:hover { color: #f0d7cc; }
   transform: none;
 }
 
+/* ===== CLIENT QUOTE ===== */
+.quote-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 120px 0;
+  text-align: center;
+}
+.quote-text {
+  margin: 0;
+  font-family: 'Saira', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(22px, 2.6vw, 32px);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: rgba(245,245,247,0.85);
+}
+.quote-attribution {
+  margin: 20px 0 0;
+  font-size: 15px;
+  color: rgba(245,245,247,0.45);
+}
+
 /* ===== CLOSING CTA ===== */
 .cta-section {
   max-width: 1680px;
@@ -879,12 +968,15 @@ a:hover { color: #f0d7cc; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .site-header { padding: 16px 24px; }
-  .hero, .problem-section, .usecases-section, .site-footer, .cta-section { padding-left: 24px; padding-right: 24px; }
+  .hero, .problem-section, .usecases-section, .site-footer, .cta-section, .quote-section { padding-left: 24px; padding-right: 24px; }
   .problem-section { padding-top: 96px; }
   .usecases-section { padding-top: 110px; padding-bottom: 110px; }
   .cta-section { padding-bottom: 110px; }
   .cta-inner { padding: 56px 28px; }
   .problem-grid { grid-template-columns: 1fr; }
+  .problem-grid-connector { display: none; }
+  .result-grid { grid-template-columns: 1fr; }
+  .quote-section { padding-top: 72px; }
   .motion-meta { grid-template-columns: 1fr; gap: 28px; }
   .hero-ctas { flex-wrap: wrap; }
   .industry-tabs { gap: 24px; }
