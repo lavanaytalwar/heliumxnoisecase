@@ -2,6 +2,44 @@
    Set BOOKING_URL to your scheduling link (Cal.com / Calendly / etc.).
    Until it's set, the buttons don't navigate anywhere. */
 var BOOKING_URL = ""; // e.g. "https://cal.com/helium/intro"
+
+/* ===== Helium × Noise opening intro ===== */
+(function () {
+  var intro = document.querySelector('[data-intro]');
+  if (!intro) return;
+
+  var skip = intro.querySelector('[data-intro-skip]');
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var exitTimer = 0;
+  var removeTimer = 0;
+  var finished = false;
+
+  document.body.classList.add('intro-locked');
+
+  function finish() {
+    if (finished) return;
+    finished = true;
+    window.clearTimeout(exitTimer);
+    window.clearTimeout(removeTimer);
+    intro.classList.add('is-exiting');
+    intro.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('intro-locked');
+
+    removeTimer = window.setTimeout(function () {
+      intro.classList.remove('is-active');
+      intro.remove();
+    }, reduced ? 420 : 720);
+  }
+
+  if (skip) skip.addEventListener('click', finish);
+  exitTimer = window.setTimeout(finish, reduced ? 1400 : 3100);
+
+  document.addEventListener('keydown', function onKeydown(event) {
+    if (event.key === 'Escape' && !finished) finish();
+    if (finished) document.removeEventListener('keydown', onKeydown);
+  });
+})();
+
 (function () {
   document.querySelectorAll('[data-book]').forEach(function (a) {
     a.addEventListener('click', function (e) {
